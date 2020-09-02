@@ -1,0 +1,15 @@
+# job properties 
+job.name=MysqlToS3
+job.group=movielense
+job.description=pull data from mysql to S3
+job.lock.enabled=flase
+
+# Source properties
+source.querybased.schema=Customer_churn_data
+source.entity=Customer_Churn 
+source.querybased.extract.type=snapshot
+
+# Extract properties
+extract.namespace=Customer_churn_data
+extract.table.type=snapshot_only
+extract.table.name=Customer_Churn
